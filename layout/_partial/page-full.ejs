@@ -6,15 +6,3 @@
 <div class="col-12 pt-lg-3 mb-4 px-4 portfolio-content">
   <%- item.content %>
 </div>
-
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
